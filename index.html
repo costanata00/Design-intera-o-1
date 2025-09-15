@@ -23,10 +23,12 @@
             border: black 2px solid;
             padding: 20px;
             max-width: 600px;
+            height: 500px;
         }
 
         .tabela-inputs label {
             display: block;
+            box-sizing: border-box;
             margin: 10px;
             font-weight: bold;
         }
@@ -41,7 +43,6 @@
         table {
             border: black 1px solid;
             width: 100%;
-            border-radius: 5px;
             text-align: center;
             overflow: hidden;
         }
@@ -85,7 +86,7 @@
 
         <label>
             Número de linhas:
-            <input type="number" id="numLinhas" min="1" value="4">
+            <input type="number" id="numLinhas" min="1" max="30" value="4">
             <br>
         </label>
         <label>
@@ -158,6 +159,7 @@
                     input.style.width = '100%';
                     input.style.color = corTexto;
                     input.style.backgroundColor = corFundo;
+                    input.style.borderColor = corBorda;
                     celula.appendChild(input);
                     linha.appendChild(celula);
                 }
