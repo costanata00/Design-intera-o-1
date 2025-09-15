@@ -66,20 +66,20 @@
     <div class="tabela-inputs">
         <label>
             Nome da tabela:
-            <input type="text" id="nomeTabela">
+            <input type="text" id="nomeTabela" value="Minha Tabela">
             <br>
         </label>
         <label>
             Nome da coluna 1:
-            <input type="text" id="coluna1">
+            <input type="text" id="coluna1" value="Coluna 1">
         </label>
         <label>
             Nome da coluna 2:
-            <input type="text" id="coluna2">
+            <input type="text" id="coluna2" value="Coluna 2">
         </label>
         <label>
             Nome da coluna 3:
-            <input type="text" id="coluna3">
+            <input type="text" id="coluna3" value="Coluna 3">
         </label>
 
 
@@ -109,7 +109,7 @@
     <script>
         document.getElementById('criar').addEventListener('click', function () {
 
-            let nome = document.getElementById('nomeTabela').value || "Minha Tabela";
+            let nome = document.getElementById('nomeTabela').value;
             let numLinhas = parseInt(document.getElementById('numLinhas').value);
             let corTexto = document.getElementById('corTexto').value;
             let corBorda = document.getElementById('corBorda').value;
