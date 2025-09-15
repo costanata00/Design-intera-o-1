@@ -126,11 +126,12 @@
             tabela.style.backgroundColor = corFundo;
             tabela.style.color = corTexto;
 
-            let caption = tabela.createCaption();
+            let caption = document.createElement('caption');
             caption.innerText = nome;
             caption.style.color = corTexto;
             caption.style.backgroundColor = corFundo;
             caption.style.borderColor = corBorda;
+            tabela.appendChild(caption);
 
             let thead = document.createElement('thead');
             let tRow = document.createElement('tr');
